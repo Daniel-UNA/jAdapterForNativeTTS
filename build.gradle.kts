@@ -3,7 +3,7 @@ plugins {
   id("maven-publish")
 }
 
-group = "io.github.jonelo"
+group = "io.github.DanielUNA"
 version = "0.12.0"
 
 repositories {
@@ -26,7 +26,7 @@ publishing {
 repositories {
     maven {
       name = "DAdapterForNativeTTS"
-      url = "https://github.com/Daniel-UNA/DAdapterForNativeTTS"
+      url = uri("https://github.com/Daniel-UNA/DAdapterForNativeTTS")
       credentials {
         username = System.getenv("GITHUB_ACTOR")
         password = System.getenv("GITHUB_TOKEN")
